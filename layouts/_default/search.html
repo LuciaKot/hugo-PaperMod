@@ -25,7 +25,7 @@
         aria-label="search" type="search" autocomplete="off" maxlength="64">
     <ul id="searchResults" aria-label="search results"></ul>
 </div>
-
+<!-- 标签 -->
 {{- if not (.Param "hideTags") }}
 {{- $taxonomies := .Site.Taxonomies.tags | default dict }}
 {{- if gt (len $taxonomies) 0 }}
@@ -42,7 +42,7 @@
 </ul>
 {{- end }}
 {{- end }}
-
+<!-- 分类 -->
 {{- if not (.Param "hideCategories") }}
 {{- $taxonomies := .Site.Taxonomies.categories | default dict }}
 {{- if gt (len $taxonomies) 0 }}
